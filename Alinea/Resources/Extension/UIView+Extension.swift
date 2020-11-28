@@ -36,16 +36,27 @@ extension UIView{
     
     //MARK:- Constraints
     
+    var topConstraint : NSLayoutConstraint? {
+        get{
+            return constraints.first(where: {
+                $0.firstAttribute == .top
+            })
+        }
+        set{
+            setNeedsLayout()
+        }
+    }
+    
     @discardableResult
     public func top(toView view: UIView, space: CGFloat = 0) -> NSLayoutConstraint {
-        let constraint = topAnchor.constraint(equalTo: view.topAnchor, constant: space)
+        let constraint = topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: space)
         constraint.isActive = true
         return constraint
     }
     
     @discardableResult
     public func bottom(toView view: UIView, space: CGFloat = 0) -> NSLayoutConstraint {
-        let constraint = bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: space)
+        let constraint = bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: space)
         constraint.isActive = true
         return constraint
     }

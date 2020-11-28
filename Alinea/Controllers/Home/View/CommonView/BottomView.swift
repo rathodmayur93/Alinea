@@ -114,7 +114,7 @@ class BottomView : UIView {
         //Setting up the bottomTabBarView constarint
         bottomTabBarView.bottomLeft(toView: self)
         bottomTabBarView.bottomRight(toView: self)
-        bottomTabBarView.height(UIDevice.current.isNodgeDisplay ? MRConstants.bottomBarViewNodgeDisplayHeight : MRConstants.bottomBarViewHeight)
+        bottomTabBarView.height(MRConstants.bottomBarViewHeight)
 
         //Setting up the collectinonView Constarint
         bottomCollectionView.left(toView: bottomTabBarView)

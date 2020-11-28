@@ -10,6 +10,4 @@ import UIKit
 @frozen public struct UiUtility {
     
     static let shared = UiUtility()
-    
-    
 }

@@ -20,7 +20,7 @@ class ThemeView : UIView {
     //Bottom Bar CollectionView
     private let themeCollectionView : UICollectionView = {
         return MRUiMaker.createCollectionView(viewFrame: .zero,
-                                              backgroundColor: .whiteColor,
+                                              backgroundColor: .backgroundColor,
                                               scrollDirection: .vertical)
     }()
     

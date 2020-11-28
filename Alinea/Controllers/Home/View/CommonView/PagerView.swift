@@ -19,7 +19,7 @@ class PagerView : UIView {
     //Bottom Bar CollectionView
     private let pagerCollectionView : UICollectionView = {
         return MRUiMaker.createCollectionView(viewFrame: .zero,
-                                              backgroundColor: .whiteColor,
+                                              backgroundColor: .backgroundColor,
                                               scrollDirection: .horizontal)
     }()
     
@@ -51,7 +51,6 @@ class PagerView : UIView {
     
     //MARK:- Setting up the UI
     private func setupView() {
-        
         //Adding the views
         self.addSubview(pagerCollectionView)
         pagerVM?.passDataToDelegateMethod()

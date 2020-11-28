@@ -24,7 +24,6 @@ class ThemeCollectionViewLayoutDelegate : ThemeCollectionViewDelegate, UICollect
         let availableWidth  = collectionView.bounds.width - paddingSpaceLeft - paddingSpaceRight
         //Calculating the each cell width
         let widthPerItem    = availableWidth / MRConstants.themeViewItemCount
-        debugPrint("Pager Width 2 \(widthPerItem)")
         return CGSize(width: widthPerItem, height: widthPerItem * 1.1)
     }
     

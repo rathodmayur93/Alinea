@@ -63,7 +63,6 @@ struct PagerViewModel : ViewModelProtocol {
         return model.isSeparatorVisible
     }
     
-    
     //MARK:- CollectionView Action Methods
     internal func collectionViewItemSelected(index : Int){
         

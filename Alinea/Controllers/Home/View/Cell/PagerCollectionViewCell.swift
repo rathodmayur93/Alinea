@@ -57,7 +57,7 @@ class PagerCollectionViewCell: UICollectionViewCell {
         model.getName(index).bind{ self.headingLabel.text = $0 }
         model.getIsSelected(index).bind{
             //Setting up the background color of the selectedView
-            self.selectedView.backgroundColor = $0 ? UIColor.setColor(name: .bottomBarSelectedColor) : UIColor.setColor(name: .whiteColor)
+            self.selectedView.backgroundColor = $0 ? UIColor.setColor(name: .bottomBarSelectedColor) : UIColor.setColor(name: .backgroundColor)
             
             //Change the text color if it's selected
             self.headingLabel.textColor = $0 ? UIColor.setColor(name: .bottomBarSelectedColor) : UIColor.setColor(name: .textColor)

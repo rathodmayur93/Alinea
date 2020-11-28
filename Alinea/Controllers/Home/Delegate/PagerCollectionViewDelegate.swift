@@ -24,7 +24,6 @@ class PagerCollectionViewLayoutDelegate : PagerCollectionViewDelegate, UICollect
         let availableWidth  = UIScreen.main.bounds.width - paddingSpaceLeft - paddingSpaceRight
         //Calculating the each cell width
         let widthPerItem    = availableWidth / (CGFloat(pagerVM?.numberOfItems(indexPath.section) ?? 0))
-        debugPrint("Pager Width \(widthPerItem)")
         return CGSize(width: widthPerItem, height: 30.0)
     }
     

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CategoryView : UIView{
+class CategoryView : UIView {
     //MARK:- Variables & Properties
     private var categoryTableViewDataSource : TableViewDataSource<CategoryTableViewCell, CategoryViewModel>!
     
@@ -73,7 +73,10 @@ class CategoryView : UIView{
     private func setupTableView(){
         
         //Setting up the tableView footer
-        categoryTableView.tableFooterView = UIView()
+        let footerView = UIView()
+        footerView.backgroundColor = UIColor.setColor(name: .backgroundColor)
+        categoryTableView.tableFooterView = footerView
+        categoryTableView.rowHeight = 110.0
         
         //Registering the CollectionView Cell class
         categoryTableView.register(CategoryTableViewCell.self,

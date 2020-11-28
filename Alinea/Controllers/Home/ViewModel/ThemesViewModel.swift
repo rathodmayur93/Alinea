@@ -13,7 +13,7 @@ struct ThemesViewModel : ViewModelProtocol {
     var items: [Any] = ThemesModel().getAllThemeModel()
     internal var themeCollectionViewDelegate : ThemeCollectionViewLayoutDelegate?
     
-    internal var sectionInsets = UIEdgeInsets(top: 0.0, left: 12.0, bottom: 0.0, right: 12.0)
+    internal var sectionInsets = UIEdgeInsets(top: 8.0, left: 12.0, bottom: 8.0, right: 12.0)
     
     //MARK:- Initializer
     init(delegate : ThemeCollectionViewLayoutDelegate) {

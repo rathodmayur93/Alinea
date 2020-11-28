@@ -13,6 +13,10 @@ struct MRConstants{
     /// This variables defiine the height of the bottomBar
     static let bottomBarViewHeight : CGFloat = 70.0
     static let bottomBarViewNodgeDisplayHeight : CGFloat = 90.0
+    
+    ///Thi variable define the height of the topVIew
+    static let topBarViewTop : CGFloat = 8.0
+    
     static let bottomBarViewRadius : CGFloat = 20.0
     static let bottomBarShadowRadius : CGFloat = 10.0
     

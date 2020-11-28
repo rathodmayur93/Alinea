@@ -98,7 +98,7 @@ class CategoryTableViewCell: UITableViewCell {
         bgView.topLeft(toView: contentView, top: 16.0 ,left: 16.0)
         //bgView.right(toView: contentView, space: -16.0)
         bgView.bottomRight(toView: contentView, bottom: -16.0 ,right: -16.0)
-        bgView.height(80.0)
+        //bgView.height(80.0)
         
         //Setting up the stockImageView constraint
         stockIV.left(toView: bgView, space: 24.0)

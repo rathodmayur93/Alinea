@@ -74,7 +74,7 @@ final class BottomCollectionViewCell: UICollectionViewCell {
         //Setting up the selectedViewConstraint
         selectedView.topLeft(toView: self.contentView)
         selectedView.right(toView: self.contentView)
-        selectedView.height(UIDevice.current.isNodgeDisplay ? MRConstants.bottomBarViewNodgeDisplayHeight : MRConstants.bottomBarViewHeight)
+        selectedView.height(MRConstants.bottomBarViewHeight)
         
         
         //Setting up the imageView into the center of the selectedView

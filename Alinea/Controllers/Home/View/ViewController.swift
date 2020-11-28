@@ -95,7 +95,7 @@ class ViewController: UIViewController {
     private func setUI(){
         
         //Setting background color
-        self.view.setBackgroundColor(bgColor: .whiteColor)
+        self.view.setBackgroundColor(bgColor: .backgroundColor)
         
         //Initializing the UIViews
         initView()
@@ -147,7 +147,7 @@ class ViewController: UIViewController {
         topView.translatesAutoresizingMaskIntoConstraints = false
         
         //Adding constraint to the topView
-        topView.topLeft(toView: self.view, top: UIDevice.current.isNodgeDisplay ? 60.0 : 30.0, left: 20.0)
+        topView.topLeft(toView: self.view, top: MRConstants.topBarViewTop, left: 20.0)
         topView.right(toView: self.view, space: -20.0)
         topView.height(30.0)
     }
@@ -166,7 +166,7 @@ class ViewController: UIViewController {
         //Adding constraint to the topView
         bottomView.bottomLeft(toView: self.view)
         bottomView.right(toView: self.view)
-        bottomView.height(UIDevice.current.isNodgeDisplay ? MRConstants.bottomBarViewNodgeDisplayHeight : MRConstants.bottomBarViewHeight)
+        bottomView.height(MRConstants.bottomBarViewHeight)
     }
     
     //MARK: PagerView
@@ -185,7 +185,6 @@ class ViewController: UIViewController {
         pagerView.left(toView: self.view, space: 20.0)
         pagerView.right(toView: self.view, space: -20.0)
         pagerView.height(MRConstants.pagerViewHeight)
-        
     }
     
     //MARK: Category View
@@ -203,7 +202,7 @@ class ViewController: UIViewController {
         categoryView.topBottom(toView: pagerView, space: 16.0)
         categoryView.left(toView: self.view)
         categoryView.right(toView: self.view)
-        categoryView.bottomTop(toView: bottomView, space: -16.0)
+        categoryView.bottomTop(toView: bottomView, space: 0.0)
         
     }
     
@@ -222,7 +221,7 @@ class ViewController: UIViewController {
         themeView.topBottom(toView: pagerView, space: 16.0)
         themeView.left(toView: self.view)
         themeView.right(toView: self.view)
-        themeView.bottomTop(toView: bottomView, space: -8.0)
+        themeView.bottomTop(toView: bottomView, space: 0.0)
         
     }
     
@@ -241,7 +240,7 @@ class ViewController: UIViewController {
         trendingView.topBottom(toView: pagerView, space: 16.0)
         trendingView.left(toView: self.view)
         trendingView.right(toView: self.view)
-        trendingView.bottomTop(toView: bottomView, space: -8.0)
+        trendingView.bottomTop(toView: bottomView, space: 0.0)
     }
 }
 
