@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7719F0FA2568F6560035E1DB /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7719F0F92568F6560035E1DB /* UIDevice+Extension.swift */; };
 		7719F10025695CDC0035E1DB /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7719F0FF25695CDC0035E1DB /* ViewModelProtocol.swift */; };
 		77257F022562A15900C9A987 /* BottomCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77257F012562A15900C9A987 /* BottomCollectionViewDelegate.swift */; };
 		77257F0F2563B9C600C9A987 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77257F0E2563B9C500C9A987 /* BottomView.swift */; };
@@ -26,7 +25,6 @@
 		77BF28E9255DBB7200B6C2F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77BF28E7255DBB7200B6C2F2 /* LaunchScreen.storyboard */; };
 		77BF290F255FFA9100B6C2F2 /* MRUiMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF290E255FFA9100B6C2F2 /* MRUiMaker.swift */; };
 		77BF2912255FFADD00B6C2F2 /* MRColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF2911255FFADD00B6C2F2 /* MRColors.swift */; };
-		77BF2915256001C400B6C2F2 /* UiUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF2914256001C400B6C2F2 /* UiUtility.swift */; };
 		77BF29192560029E00B6C2F2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF29182560029E00B6C2F2 /* UIView+Extension.swift */; };
 		77BF291D256111E600B6C2F2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF291C256111E600B6C2F2 /* UIColor+Extension.swift */; };
 		77BF2920256122A900B6C2F2 /* MRConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF291F256122A900B6C2F2 /* MRConstants.swift */; };
@@ -54,7 +52,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7719F0F92568F6560035E1DB /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		7719F0FF25695CDC0035E1DB /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		77257F012562A15900C9A987 /* BottomCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		77257F0E2563B9C500C9A987 /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
@@ -75,7 +72,6 @@
 		77BF28EA255DBB7200B6C2F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77BF290E255FFA9100B6C2F2 /* MRUiMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRUiMaker.swift; sourceTree = "<group>"; };
 		77BF2911255FFADD00B6C2F2 /* MRColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRColors.swift; sourceTree = "<group>"; };
-		77BF2914256001C400B6C2F2 /* UiUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiUtility.swift; sourceTree = "<group>"; };
 		77BF29182560029E00B6C2F2 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		77BF291C256111E600B6C2F2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		77BF291F256122A900B6C2F2 /* MRConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRConstants.swift; sourceTree = "<group>"; };
@@ -169,7 +165,6 @@
 			children = (
 				77BF29182560029E00B6C2F2 /* UIView+Extension.swift */,
 				77BF291C256111E600B6C2F2 /* UIColor+Extension.swift */,
-				7719F0F92568F6560035E1DB /* UIDevice+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -180,7 +175,6 @@
 				77BF29172560028400B6C2F2 /* Extension */,
 				77BF290E255FFA9100B6C2F2 /* MRUiMaker.swift */,
 				77BF2911255FFADD00B6C2F2 /* MRColors.swift */,
-				77BF2914256001C400B6C2F2 /* UiUtility.swift */,
 				77BF291F256122A900B6C2F2 /* MRConstants.swift */,
 				77257F152563C64300C9A987 /* MRImages.swift */,
 			);
@@ -364,7 +358,6 @@
 				77257F232563D60100C9A987 /* PagerViewModel.swift in Sources */,
 				77EFE413256521FA0056C87C /* ThemesViewModel.swift in Sources */,
 				77BF29292561277200B6C2F2 /* DynamicBinding.swift in Sources */,
-				77BF2915256001C400B6C2F2 /* UiUtility.swift in Sources */,
 				77257F132563C48000C9A987 /* TopView.swift in Sources */,
 				77BF2912255FFADD00B6C2F2 /* MRColors.swift in Sources */,
 				77EFE422256526F20056C87C /* ThemeCollectionViewDelegate.swift in Sources */,
@@ -389,7 +382,6 @@
 				77EFE41F256526D90056C87C /* ThemeView.swift in Sources */,
 				77257F192563CF9E00C9A987 /* PagerView.swift in Sources */,
 				77EFE410256520B40056C87C /* ThemesModel.swift in Sources */,
-				7719F0FA2568F6560035E1DB /* UIDevice+Extension.swift in Sources */,
 				77BF2920256122A900B6C2F2 /* MRConstants.swift in Sources */,
 				77257F1C2563D27700C9A987 /* PagerCollectionViewCell.swift in Sources */,
 				77EAE0B1256476EB0023B094 /* CategoryViewModel.swift in Sources */,
